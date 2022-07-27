@@ -140,6 +140,12 @@ body {
     display: flex;
 }
 
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
+    background-position: center;
+}
+
 .mail {    
     margin-right: 50px;
 }
@@ -152,6 +158,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-page-color);
+    display: flex;
+    align-items: center;
 }
 
 /*--------HERO---------*/
@@ -161,6 +169,14 @@ body {
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--dark);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
@@ -212,6 +228,16 @@ body {
 
 .features-item:last-child {
     margin-right: 0;
+}
+
+.features-icon-container {
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--light);
 }
 
 .features-title {
@@ -304,6 +330,7 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--secondary-page-color);
+    margin-bottom: 16px;
 }
 
 .card-description {
@@ -312,6 +339,83 @@ body {
     background-color: #ffffff;
 }
 
+.card-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.card-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;    
+    color: #AFB1B8;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.card-social-link:hover,
+.card-social-link:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.card-social-icon {
+    fill: currentColor;
+}
+
+/*--------CLIENTS---------*/
+
+.clients-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+}
+
+.clients-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color)
+}
+
+.clients-icon {
+    fill: currentColor;
+}
 
 /*--------FOOTER---------*/
 
@@ -375,6 +479,59 @@ body {
     color: var(--accent-color);
 }
 
+.footer-container {
+    display: inline-grid;
+    align-items: baseline;
+}
+
+.footer-container-social {
+    gap: 10px;
+}
+
+.footer-container:not(:last-child) {
+    margin-right: 70px;
+}
+
+.footer-join-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+
 /*------------------PORTFOLIO.HTML------------------*/
 
 /*--------FILTER---------*/
@@ -431,6 +588,10 @@ body {
 
 .portfolio-item {
     flex-basis: calc((100% - 2 * 30) / 3);
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
