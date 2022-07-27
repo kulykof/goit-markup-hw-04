@@ -484,10 +484,6 @@ body {
     align-items: baseline;
 }
 
-.footer-container-social {
-    gap: 10px;
-}
-
 .footer-container:not(:last-child) {
     margin-right: 70px;
 }
@@ -506,6 +502,7 @@ body {
 .footer-social {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .footer-social-item {
